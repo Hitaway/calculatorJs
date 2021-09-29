@@ -1,0 +1,17 @@
+Dans un premier temps je définis ce qu'est une expression valide (j'aurais aimé aller plus loin mais impossible par manque de temps)
+Si nous ouvrons une parenthèse dans l'expression il faut obligatoirement la fermer => CHECK
+L'expression contient + - / * [1-9] => CHECK
+Pas de division par zéro => CHECK
+
+TO DO =>
+L'expression contient au moins 1 chiffre
+Un opérateur + - / * est toujours suivi d'un chiffre
+Un chiffre peut commencer par un + ou - mais pas par / où *
+
+Je n'ai pas pris en compte les chiffres à virgule et points ainsi que les additions/soustraction de nombre négatif (ex: 2*-4)
+
+Pour l'expression j'ai décidé de split la chaine de caractère en array.
+Ensuite mon raisonnement est de faire les calculs et dépiler le tableau créer précédemment en prenant en compte les opérateurs prioritaires.
+
+En matière de temps j'en suis à 4h, la partie du code ou je check si l'expression est valide (1h sur les 4h) n'est peut-être pas nécessaire mais j'aime regarder ce que saisit l'utilisateur peu importe le programme cependant on peut encore améliorer cela.
+Je reste à ta disposition si tu as des questions.
